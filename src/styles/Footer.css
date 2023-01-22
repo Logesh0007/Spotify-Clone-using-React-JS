@@ -1,0 +1,110 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 13vh;
+    width: 100%;
+    background-color: #282828;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(13vh);
+    transition: all 0.2s;
+}
+
+.footer.moveTop {
+    transform: translateY(0vh);
+}
+
+.footer_left {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    width: 300px;
+}
+
+.foooter_albumImg {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.footer_songInfo h4 {
+    font-weight: 600;
+
+}
+
+.footer_songInfo p {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin-top: 3px;
+    color: #b9b6b6;
+}
+
+.footer_center {
+    flex: 0.4;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    /* padding: 0 50px; */
+}
+
+.footer_shuffle,
+.footer_previous,
+.footer_play,
+.footer_next,
+.footer_repeat {
+    transition: all 0.3s !important;
+    cursor: pointer;
+}
+
+.footer_previous,
+.footer_next {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.footer_play {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.footer_shuffle:hover,
+.footer_previous:hover,
+.footer_play:hover,
+.footer_next:hover,
+.footer_repeat:hover {
+    color: white;
+}
+
+.footer_right {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+}
+
+.footer_grid {
+    margin: 0 !important;
+}
+
+.footer_rightControls {
+    width: 50%;
+    margin: 0 0 0 auto !important;
+    color: white;
+}
+
+.footer_rightControls span {
+    color: white !important;
+}
+
+.css-eg0mwd-MuiSlider-thumb {
+    width: 0 !important;
+    height: 0 !important;
+    box-shadow: none !important;
+}

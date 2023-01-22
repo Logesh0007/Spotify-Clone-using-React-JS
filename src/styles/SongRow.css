@@ -1,0 +1,31 @@
+.song_row {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    transition: all 0.2s;
+    border-radius: 5px;
+    cursor: default;
+}
+
+
+.song_row:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.song_row img {
+    width: 45px;
+    height: 45px;
+}
+
+.song_info h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.song_info p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: grey;
+}

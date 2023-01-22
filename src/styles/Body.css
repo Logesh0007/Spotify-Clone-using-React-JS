@@ -1,0 +1,68 @@
+.spotify_body {
+    flex: 0.85;
+    color: white;
+    height: 100vh;
+    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+    padding: 30px;
+    overflow: overlay;
+}
+
+div.bodyFullHeight {
+    transition: all 0.5s;
+    height: 87vh;
+}
+
+.body_info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.body_info img {
+    height: 15vw;
+    margin: 0 20px 0 0;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body_infoText {
+    flex: 1;
+}
+
+.body_infoText h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.body_infoText p {
+    font-size: 14px;
+}
+
+.body_songs {
+    margin-top: 10px;
+}
+
+.body_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.spBody_play {
+    font-size: 80px !important;
+    cursor: pointer;
+    color: rgb(2, 158, 2);
+    border-radius: 50%;
+    background-color: black;
+    transform: scale(0.8) !important;
+}
+
+.spBody_play path {
+    transform: scale(1.2) translate(-2px, -2px);
+}
+
+.spBody_play:hover {
+    transition: all 0.2s;
+    transform: scale(1.05);
+}
