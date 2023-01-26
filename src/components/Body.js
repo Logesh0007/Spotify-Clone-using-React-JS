@@ -9,7 +9,7 @@ import "../styles/Body.css";
 
 function Body({ spotify }) {
   const [{ discoveryWeekly, songSelected }, dispatch] = useStateValue();
-  console.log(discoveryWeekly);
+  // console.log(discoveryWeekly);
 
   return (
     <div className={`spotify_body ${songSelected ? "bodyFullHeight" : ""}`}>

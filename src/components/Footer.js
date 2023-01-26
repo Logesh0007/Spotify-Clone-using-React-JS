@@ -12,11 +12,22 @@ import { useStateValue } from "../StateProvider";
 function Footer() {
   const [{ playTrack, songSelected }, dispatch] = useStateValue();
 
-  console.log(playTrack?.name);
+  console.log(playTrack?.id);
 
   return (
     <div className={`footer ${songSelected ? "moveTop" : ""}`}>
-      <div className="footer_left">
+      <iframe
+        title="song"
+        style={{ borderRadius: "10px 10px 0 0" }}
+        src={`https://open.spotify.com/embed/track/${playTrack?.id}?utm_source=generator`}
+        width="100%"
+        height="100%"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+      
+      {/* <div className="footer_left">
         <img
           src={playTrack?.album.images[2].url}
           alt="Album Img"
@@ -37,6 +48,12 @@ function Footer() {
         <PlayCircleFilledWhiteOutlinedIcon className="footer_play" />
         <SkipPreviousIcon className="footer_next" />
         <RepeatOutlinedIcon className="footer_repeat" />
+
+        <div>
+          <audio controls>
+            <source src="http://localhost:3000/v1/tracks/spotify:track:4vlMdXsRpAIXYggwbNHZSv" />
+          </audio>
+        </div>
       </div>
 
       <div className="footer_right">
@@ -53,7 +70,7 @@ function Footer() {
             <VolumeUp />
           </Stack>
         </Grid>
-      </div>
+      </div> */}
     </div>
   );
 }

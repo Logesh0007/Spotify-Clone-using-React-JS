@@ -9,7 +9,6 @@ import { useStateValue } from "./StateProvider";
 const spotify = new SpotifyWebApi();
 
 function App() {
-  // const [playlistId, setPlaylistId] = useState();
   const [{ token }, dispatch] = useStateValue();
 
   useEffect(() => {

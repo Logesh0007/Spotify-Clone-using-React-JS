@@ -1,14 +1,14 @@
 .footer {
     position: fixed;
-    bottom: 0;
-    height: 13vh;
+    bottom: -1px;
+    height: 11vh;
     width: 100%;
-    background-color: #282828;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     justify-content: space-between;
     transform: translateY(13vh);
     transition: all 0.2s;
+    background: linear-gradient(to right, rgb(4, 4, 4), rgba(0, 0, 0, 1));
 }
 
 .footer.moveTop {
@@ -107,4 +107,12 @@
     width: 0 !important;
     height: 0 !important;
     box-shadow: none !important;
+}
+
+iframe {
+    border: none;
+}
+
+iframe button .Button-sc-1dqy6lx-0 .WDtzS .VZCeeoA2j8bEQP549DpG {
+    display: none !important;
 }
