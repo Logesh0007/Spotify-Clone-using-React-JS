@@ -12,8 +12,6 @@ import { useStateValue } from "../StateProvider";
 function Footer() {
   const [{ playTrack, songSelected }, dispatch] = useStateValue();
 
-  console.log(playTrack?.id);
-
   return (
     <div className={`footer ${songSelected ? "moveTop" : ""}`}>
       <iframe
@@ -22,11 +20,11 @@ function Footer() {
         src={`https://open.spotify.com/embed/track/${playTrack?.id}?utm_source=generator`}
         width="100%"
         height="100%"
-        allowfullscreen=""
+        allowFullScreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
-      
+
       {/* <div className="footer_left">
         <img
           src={playTrack?.album.images[2].url}

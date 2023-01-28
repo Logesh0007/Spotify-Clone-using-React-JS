@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/SideBar.css";
 import SideBarOptions from "./SideBarOptions";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -6,8 +6,9 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LibraryMusicOutlinedIcon from "@mui/icons-material/LibraryMusicOutlined";
 import { useStateValue } from "../StateProvider";
 
-function SideBar() {
+function SideBar({ spotify }) {
   const [{ playlist }, dispatch] = useStateValue();
+  const [selectedPlaylist, setSelectedPlaylist] = useState("");
 
   return (
     <div className="sidebar">
@@ -24,7 +25,12 @@ function SideBar() {
       <hr />
 
       {playlist?.items?.map((playlistItems) => (
-        <SideBarOptions title={playlistItems.name} />
+        <SideBarOptions
+          title={playlistItems.name}
+          spotify={spotify}
+          selectedPlaylist={selectedPlaylist}
+          setSelectedPlaylist={setSelectedPlaylist}
+        />
       ))}
     </div>
   );

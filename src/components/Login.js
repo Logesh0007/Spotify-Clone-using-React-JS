@@ -14,7 +14,7 @@ function Login() {
       <img
         src="./Spotify_Logo.png"
         alt="spotify logo"
-        className='login_logo showAnim'
+        className="login_logo showAnim"
       />
       <a href={loginUrl} className={showBtn && "show_a"}>
         LOGIN WITH SPOTIFY
